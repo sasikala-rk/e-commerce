@@ -1,0 +1,25 @@
+@import './var.scss';
+
+@mixin FJCCAIC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grandparent {
+    color: $color;
+
+    .parent {
+        color: red;
+
+        .child {
+            color: red;
+            @include FJCCAIC;
+
+            .grandchild {
+                color: red;
+
+            }
+        }
+    }
+}
