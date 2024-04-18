@@ -1,0 +1,22 @@
+:root{
+    --color: blue;
+    --common-padding: 8px;
+}
+
+.grandparent {
+    color: var(--color);
+}
+
+.grandparent .parent {
+    color: red;
+    padding: calc(var(--common-padding) + 2px);
+    margin: calc(10px + 2px);
+}
+
+.grandparent .parent .child {
+    color: red;
+}
+
+.grandparent .parent .child .grandchild {
+    color: red;
+}
