@@ -3,13 +3,15 @@ import { Search } from 'react-feather';
 const logoURL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB_69dE6cdCFGTvFj1NSfJX093JL87yJueeh8cLE5KnJethuop";
 
 const Header = () => {
-    return ( 
+    return (
         <header>
             <div className='container'>
                 <nav>
                     <ul>
                         <li className='p-0'>
-                            <img className='logo' src={logoURL} />
+                            <a href='/'>
+                                <img className='logo' src={logoURL} />
+                            </a>
                         </li>
                         <li><a href='/grocery'>Groceries</a></li>
                         <li><a href='/electronics'>Electronics</a></li>
@@ -24,7 +26,7 @@ const Header = () => {
                 </nav>
             </div>
         </header>
-        
+
     )
 }
 
